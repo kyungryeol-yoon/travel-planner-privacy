@@ -280,19 +280,21 @@
 </div>
 
 <div class="container">
-  <div class="effective-date" id="effective-date">시행일: 2026년 4월 17일 | 최종 수정: 2026년 4월 17일</div>
+  <div class="effective-date" id="effective-date">시행일: 2026년 5월 29일 | 최종 수정: 2026년 5월 29일</div>
 
   <div class="summary-card">
     <h3 id="summary-title">📋 한눈에 보기</h3>
     <ul id="summary-list">
-      <li id="s1">개인정보를 직접 수집하지 않습니다</li>
-      <li id="s2">모든 데이터는 사용자 기기에만 저장됩니다</li>
-      <li id="s3">서버로 전송되는 데이터가 없습니다</li>
-      <li id="s4">Google AdMob을 통해 맞춤형 광고를 제공하며 광고 ID를 사용합니다</li>
-      <li id="s5">만 14세 미만 아동의 정보를 수집하지 않습니다</li>
+      <li id="s1">비회원으로도 모든 기능을 사용할 수 있습니다</li>
+      <li id="s2">모든 데이터는 기본적으로 사용자 기기에만 저장됩니다</li>
+      <li id="s3">로그인 시 일부 데이터가 클라우드(Supabase, 서울 리전)에 백업됩니다 (선택사항)</li>
+      <li id="s4">사진과 영상은 클라우드로 전송되지 않습니다</li>
+      <li id="s5">Google AdMob을 통해 맞춤형 광고를 제공하며 광고 ID를 사용합니다</li>
+      <li id="s6">만 14세 미만 아동의 정보를 수집하지 않습니다</li>
     </ul>
   </div>
 
+  <!-- 1. 개요 -->
   <section>
     <h2><span class="num">1</span> <span id="t1">개요</span></h2>
     <p id="p1">
@@ -300,16 +302,29 @@
     </p>
   </section>
 
+  <!-- 2. 수집하는 개인정보 -->
   <section>
     <h2><span class="num">2</span> <span id="t2">수집하는 개인정보</span></h2>
     <div class="highlight-box" id="h1">
-      ✅ 이 앱은 사용자의 개인정보를 직접 수집하지 않습니다.
+      ✅ 비회원 사용 시 앱은 사용자의 개인정보를 직접 수집하지 않습니다.
     </div>
     <p id="p2">
-      앱에서 입력하는 여행 일정, 예산 정보, 체크리스트 등 모든 데이터는 사용자의 기기(스마트폰) 내에만 저장되며, 외부 서버로 전송되지 않습니다. 회원가입, 로그인, 이메일 등의 개인정보 입력을 요구하지 않습니다. 다만, 서비스 운영을 위해 <strong>Google AdMob을 사용하여 광고를 제공하며, 광고 ID를 사용합니다.</strong>
+      앱은 <strong>완전 오프라인</strong>으로 동작하는 것이 기본이며, 비회원으로도 모든 기능(여행 일정·예산·체크리스트·메모·정산 등)을 그대로 사용할 수 있습니다. 이 경우 입력한 데이터는 사용자의 기기 내에만 저장되고 외부로 전송되지 않습니다.
+    </p>
+    <p id="p2b" style="margin-top: 12px;">
+      <strong>선택적으로 회원가입을 한 경우</strong>에는 다음 정보가 수집·저장됩니다.
+    </p>
+    <ul id="ul-collect" style="margin-top: 8px;">
+      <li><strong>이메일 주소</strong> — 계정 식별, 비밀번호 재설정 메일 발송 목적</li>
+      <li><strong>비밀번호</strong> — Supabase Auth가 안전하게 해시 처리하여 저장 (평문 저장 안 함)</li>
+      <li><strong>사용자 고유 ID(UID)</strong> — Supabase가 자동 발급하는 식별자</li>
+    </ul>
+    <p id="p2c" style="margin-top: 12px;">
+      또한, 광고 서비스 제공을 위해 <strong>Google AdMob을 사용하여 광고 ID</strong>를 활용합니다.
     </p>
   </section>
 
+  <!-- 3. 기기 내 저장 데이터 -->
   <section>
     <h2><span class="num">3</span> <span id="t3">기기 내 저장 데이터</span></h2>
     <p id="p3">앱은 기능 제공을 위해 다음 데이터를 사용자의 기기 내에만 저장합니다.</p>
@@ -334,7 +349,46 @@
   </section>
 
   <section>
-    <h2><span class="num">4</span> <span id="t4">제3자 서비스 (광고)</span></h2>
+    <h2><span class="num">4</span> <span id="t-cloud">클라우드 저장 (선택사항)</span></h2>
+    <div class="highlight-box" id="h-cloud">
+      ☁️ 로그인한 사용자에 한해, 다기기 동기화 및 백업 목적으로 일부 데이터를 클라우드에 저장합니다. 로그인하지 않으면 이 기능은 동작하지 않습니다.
+    </div>
+    <p id="p-cloud-1" style="margin-top: 12px;">
+      앱은 Supabase Inc.가 제공하는 백엔드 서비스를 통해 클라우드 저장 기능을 구현합니다. 데이터는 <strong>한국 서울 리전(AWS ap-northeast-2)</strong>에 저장되며, 사용자의 명시적인 로그인 시에만 동기화됩니다.
+    </p>
+
+    <p id="p-cloud-2" style="margin-top: 16px;"><strong id="th-cloud-data">클라우드에 동기화되는 데이터</strong></p>
+    <table class="info-table">
+      <thead>
+        <tr>
+          <th id="th-c1">항목</th>
+          <th id="th-c2">내용</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td id="dc1">여행 일정</td><td id="dc2">도시, 날짜, 숙박일수, 교통편</td></tr>
+        <tr><td id="dc3">지출·환전 기록</td><td id="dc4">금액, 카테고리, 결제수단, 메모</td></tr>
+        <tr><td id="dc5">메모</td><td id="dc6">텍스트 메모 (첨부 사진/영상 제외)</td></tr>
+        <tr><td id="dc7">체크리스트</td><td id="dc8">준비 항목 및 완료 상태</td></tr>
+        <tr><td id="dc9">정산 데이터</td><td id="dc10">멤버, 공동 지출 내역</td></tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box" id="h-cloud-photos" style="margin-top: 14px;">
+      🔒 <strong>사진 및 영상은 클라우드로 전송되지 않습니다.</strong> 메모·도시·영수증에 첨부된 모든 사진과 영상은 사용자의 기기에만 저장됩니다.
+    </div>
+
+    <p id="p-cloud-3" style="margin-top: 14px;">
+      모든 클라우드 데이터는 Supabase의 행 단위 보안(RLS, Row-Level Security)을 통해 본인만 접근할 수 있으며, 통신은 TLS로 암호화됩니다. 사용자가 로그아웃하면 새로운 동기화는 중단되지만, 로컬 데이터는 그대로 유지됩니다.
+    </p>
+
+    <p id="p-cloud-4" style="margin-top: 12px;">
+      <strong id="t-cloud-overseas">국외 이전 안내:</strong> Supabase Inc.는 미국 법인이며 데이터 처리 인프라가 글로벌 클라우드에 분산되어 있습니다. 본 앱은 서울 리전을 명시적으로 지정하여 데이터의 물리적 저장 위치를 한국으로 한정하였으나, 회원가입에 동의함으로써 사용자는 일부 처리 과정에서 데이터가 국외로 전송될 수 있음에 동의한 것으로 간주됩니다.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> <span id="t4">제3자 서비스 (광고)</span></h2>
     <p id="p4">
       앱은 Google AdMob을 통해 광고를 표시하며, 맞춤형 광고 제공 및 광고 성과 측정을 위해 <strong>광고 ID를 사용합니다.</strong> Google AdMob은 광고 제공을 위해 다음 정보를 자동으로 수집할 수 있습니다.
     </p>
@@ -354,7 +408,7 @@
   </section>
 
   <section>
-    <h2><span class="num">5</span> <span id="t5">광고 추적 설정</span></h2>
+    <h2><span class="num">6</span> <span id="t5">광고 추적 설정</span></h2>
     <p id="p6">사용자는 기기 설정에서 광고 추적을 제한하거나 광고 ID를 삭제할 수 있습니다.</p>
     <table class="info-table">
       <thead>
@@ -380,36 +434,49 @@
   </section>
 
   <section>
-    <h2><span class="num">6</span> <span id="t6">아동의 개인정보 보호</span></h2>
+    <h2><span class="num">7</span> <span id="t6">아동의 개인정보 보호</span></h2>
     <p id="p8">
       이 앱은 만 14세 미만의 아동을 대상으로 하지 않으며, 의도적으로 아동의 개인정보를 수집하지 않습니다. 만 14세 미만 아동이 본 앱을 사용하고 있음을 인지할 경우, 즉시 관련 데이터를 삭제하기 위해 노력하겠습니다.
     </p>
   </section>
 
   <section>
-    <h2><span class="num">7</span> <span id="t7">데이터 보안</span></h2>
+    <h2><span class="num">8</span> <span id="t7">데이터 보안</span></h2>
     <p id="p9">
-      모든 사용자 데이터는 기기 내부에만 저장되며 네트워크를 통해 전송되지 않으므로, 서버 해킹이나 데이터 유출의 위험이 없습니다. 기기 자체의 보안(화면 잠금, 암호 설정 등)을 통해 데이터를 보호하시기 바랍니다.
+      비회원 사용자의 데이터는 기기 내부에만 저장되며 네트워크를 통해 전송되지 않습니다. 회원으로 로그인한 사용자의 클라우드 동기화 데이터는 다음과 같이 보호됩니다.
+    </p>
+    <ul id="ul-security" style="margin-top: 8px;">
+      <li>모든 통신은 <strong>TLS(HTTPS)</strong>로 암호화됩니다</li>
+      <li>비밀번호는 Supabase Auth가 단방향 해시 처리하며, 평문으로 저장되지 않습니다</li>
+      <li>Supabase의 <strong>행 단위 보안(Row-Level Security)</strong>으로 본인 외에는 데이터에 접근할 수 없습니다</li>
+      <li>개발자는 사용자의 비밀번호 평문을 알 수 없으며, 동기화된 콘텐츠(여행/지출/메모 등)도 운영상 필요 외에는 열람하지 않습니다</li>
+    </ul>
+    <p id="p9b" style="margin-top: 12px;">
+      기기 자체의 보안(화면 잠금, 암호 설정 등)을 통해 디바이스에 저장된 데이터도 보호하시기 바랍니다.
     </p>
   </section>
 
   <section>
-    <h2><span class="num">8</span> <span id="t8">사용자의 권리</span></h2>
+    <h2><span class="num">9</span> <span id="t8">사용자의 권리</span></h2>
     <p id="p10">사용자는 언제든지 다음을 할 수 있습니다.</p>
     <ul id="ul2">
-      <li>앱 내에서 저장된 데이터를 초기화 (초기화 버튼)</li>
-      <li>앱을 삭제하여 모든 데이터를 완전히 제거</li>
-      <li>기기 설정에서 광고 추적을 제한</li>
+      <li>앱 내에서 저장된 데이터를 초기화 (설정 → 데이터 초기화)</li>
+      <li>JSON 형식으로 데이터를 내보내기/백업 (설정 → 데이터 내보내기)</li>
+      <li>앱을 삭제하여 기기에 저장된 모든 데이터를 완전히 제거</li>
+      <li>기기 설정에서 광고 추적을 제한하거나 광고 ID를 삭제</li>
+      <li><strong>로그아웃</strong>: 설정 → 클라우드 → 로그아웃 (로컬 데이터는 유지됨)</li>
+      <li><strong>계정 및 클라우드 데이터 삭제 요청</strong>: 아래 이메일로 가입 이메일을 명시하여 요청 시, 14일 이내에 클라우드에 저장된 모든 데이터와 계정을 영구 삭제합니다</li>
     </ul>
   </section>
 
   <section>
-    <h2><span class="num">9</span> <span id="t9">처리방침의 변경</span></h2>
+    <h2><span class="num">10</span> <span id="t9">처리방침의 변경</span></h2>
     <p id="p11">
       본 개인정보 처리방침이 변경될 경우, 앱 업데이트 또는 본 페이지를 통해 변경 사항을 공지합니다. 중요한 변경이 있을 경우 앱 내 알림을 통해 안내할 수 있습니다.
     </p>
   </section>
 
+  <!-- Contact -->
   <div class="contact-card">
     <h3 id="ct1">문의하기</h3>
     <p id="ct2">개인정보 처리방침에 대한 문의사항이 있으시면<br>아래 이메일로 연락해 주세요.</p>
@@ -428,18 +495,22 @@
 const en = {
   "page-title": "Privacy Policy",
   "page-subtitle": "Travel Planner",
-  "effective-date": "Effective: April 17, 2026 | Last updated: April 17, 2026",
+  "effective-date": "Effective: May 29, 2026 | Last updated: May 29, 2026",
   "summary-title": "📋 At a Glance",
-  "s1": "We do not directly collect any personal information",
-  "s2": "All data is stored only on your device",
-  "s3": "No data is transmitted to any server",
-  "s4": "We use Google AdMob for personalized ads and use Advertising ID",
-  "s5": "We do not collect information from children under 14",
+  "s1": "All features are available without an account",
+  "s2": "By default, all data is stored only on your device",
+  "s3": "If you log in, some data is backed up to the cloud (Supabase, Seoul region) — optional",
+  "s4": "Photos and videos are never uploaded to the cloud",
+  "s5": "We use Google AdMob for personalized ads and use Advertising ID",
+  "s6": "We do not collect information from children under 14",
   "t1": "Introduction",
   "p1": "Travel Planner (hereinafter \"the App\") values your privacy and complies with applicable privacy laws. This Privacy Policy describes what information the App collects and how it is processed.",
   "t2": "Information We Collect",
-  "h1": "✅ This app does not collect any personal information from users.",
-  "p2": "All data you enter—including travel itineraries, budgets, and checklists—is stored only on your device and is never transmitted to external servers. The App does not require account registration, login, or any personal information. However, for service operation, <strong>we use Google AdMob to provide advertisements and use Advertising IDs.</strong>",
+  "h1": "✅ When used without an account, the App does not directly collect personal information.",
+  "p2": "The App is designed to work <strong>fully offline by default</strong>, and all features (itineraries, budgets, checklists, memos, split bills, etc.) are available without signing up. In that case, your data is stored only on your device and is never transmitted externally.",
+  "p2b": "<strong>If you choose to create an account</strong>, the following information is collected and stored:",
+  "ul-collect": "<li><strong>Email address</strong> — for account identification and password reset emails</li><li><strong>Password</strong> — securely hashed by Supabase Auth (never stored in plain text)</li><li><strong>User ID (UID)</strong> — a unique identifier automatically issued by Supabase</li>",
+  "p2c": "Additionally, the App uses <strong>Google AdMob and Advertising IDs</strong> to provide advertising services.",
   "t3": "Data Stored on Your Device",
   "p3": "The App stores the following data locally on your device to provide its features:",
   "th1": "Data Type", "th2": "Details", "th3": "Storage Location",
@@ -448,6 +519,20 @@ const en = {
   "d7": "Checklist", "d8": "Preparation items, completion status", "d9": "Device only",
   "d10": "Preferences", "d11": "Currency unit, display settings", "d12": "Device only",
   "w1": "⚠️ Deleting the app will permanently remove all stored data. Please back up any important data before uninstalling.",
+  "t-cloud": "Cloud Storage (Optional)",
+  "h-cloud": "☁️ For logged-in users only, some data is stored in the cloud for multi-device sync and backup. This feature does not operate if you do not log in.",
+  "p-cloud-1": "The App implements cloud storage through the backend service provided by Supabase Inc. Data is stored in the <strong>Seoul region (AWS ap-northeast-2)</strong> in South Korea and is synced only after explicit user login.",
+  "th-cloud-data": "Data synced to the cloud",
+  "th-c1": "Type", "th-c2": "Details",
+  "dc1": "Itinerary", "dc2": "Cities, dates, nights, transport info",
+  "dc3": "Expenses & Exchanges", "dc4": "Amount, category, payment method, memo",
+  "dc5": "Memos", "dc6": "Text memos (attached photos/videos excluded)",
+  "dc7": "Checklist", "dc8": "Preparation items and completion status",
+  "dc9": "Split Bill Data", "dc10": "Members, shared expenses",
+  "h-cloud-photos": "🔒 <strong>Photos and videos are not transmitted to the cloud.</strong> All photos and videos attached to memos, cities, and receipts remain only on your device.",
+  "p-cloud-3": "All cloud data is protected by Supabase's Row-Level Security (RLS) so that only you can access it, and all communication is encrypted with TLS. Logging out stops new sync operations, but your local data remains intact.",
+  "t-cloud-overseas": "Cross-border Data Transfer:",
+  "p-cloud-4": "<strong>Cross-border Data Transfer:</strong> Supabase Inc. is a U.S. company with global cloud processing infrastructure. The App explicitly specifies the Seoul region to limit the physical storage location to South Korea; however, by signing up, you agree that some processing may involve data being transferred outside Korea.",
   "t4": "Third-Party Services (Advertising)",
   "p4": "The App displays ads through Google AdMob and <strong>uses Advertising IDs</strong> to provide personalized ads and measure ad performance. Google AdMob may automatically collect the following information for ad delivery:",
   "ul1": "<li>Advertising identifier (IDFA/GAID)</li><li>Device information (model, OS version)</li><li>Approximate location (IP-based)</li><li>App usage data (ad views/clicks)</li>",
@@ -461,10 +546,12 @@ const en = {
   "t6": "Children's Privacy",
   "p8": "This App is not intended for children under 14 years of age, and we do not knowingly collect personal information from children. If we become aware that a child under 14 is using the App, we will take steps to delete any related data.",
   "t7": "Data Security",
-  "p9": "All user data is stored locally on your device and is never transmitted over a network, eliminating risks of server breaches or data leaks. We recommend securing your device with screen lock and passcode settings.",
+  "p9": "For users without an account, all data is stored locally on your device and never transmitted over a network. For logged-in users, cloud-synced data is protected as follows:",
+  "ul-security": "<li>All communication is encrypted with <strong>TLS (HTTPS)</strong></li><li>Passwords are one-way hashed by Supabase Auth and never stored in plain text</li><li>Supabase's <strong>Row-Level Security</strong> ensures no one but you can access your data</li><li>The developer cannot access plain-text passwords and does not review synced content (trips, expenses, memos, etc.) except as operationally necessary</li>",
+  "p9b": "We recommend securing your device with screen lock and passcode settings to protect data stored locally as well.",
   "t8": "Your Rights",
   "p10": "You can at any time:",
-  "ul2": "<li>Reset all stored data within the App (Reset button)</li><li>Delete the App to permanently remove all data</li><li>Limit ad tracking through your device settings</li>",
+  "ul2": "<li>Reset all stored data within the App (Settings → Reset Data)</li><li>Export/back up data as JSON (Settings → Export Data)</li><li>Delete the App to permanently remove all data stored on your device</li><li>Limit ad tracking or delete the Advertising ID through your device settings</li><li><strong>Log out</strong>: Settings → Cloud → Log Out (local data is preserved)</li><li><strong>Request account and cloud data deletion</strong>: Email us with your registered email address, and all cloud-stored data and the associated account will be permanently deleted within 14 days</li>",
   "t9": "Changes to This Policy",
   "p11": "If this Privacy Policy is updated, changes will be communicated through app updates or this page. Significant changes may be notified through in-app notifications.",
   "ct1": "Contact Us",
@@ -477,8 +564,7 @@ let savedKo = {};
 function setLang(lang) {
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   document.querySelectorAll('.lang-btn').forEach(b => {
-    if ((lang === 'ko' && (b.textContent === '한국어' || b.innerText === '한국어')) || 
-        (lang === 'en' && (b.textContent === 'English' || b.innerText === 'English')))
+    if ((lang === 'ko' && b.textContent === '한국어') || (lang === 'en' && b.textContent === 'English'))
       b.classList.add('active');
   });
 
