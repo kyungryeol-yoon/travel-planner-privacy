@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>여행 플래너 - 개인정보 처리방침 | Travel Planner - Privacy Policy</title>
+  <title>여행 노트 - 개인정보 처리방침 | Trip Notes - Privacy Policy</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -272,7 +272,7 @@
 <div class="header">
   <div class="header-label">Privacy Policy</div>
   <h1 id="page-title">개인정보 처리방침</h1>
-  <p id="page-subtitle">여행 플래너 (Travel Planner)</p>
+  <p id="page-subtitle">여행 노트 (Trip Notes)</p>
   <div class="lang-toggle">
     <button class="lang-btn active" onclick="setLang('ko')">한국어</button>
     <button class="lang-btn" onclick="setLang('en')">English</button>
@@ -280,14 +280,15 @@
 </div>
 
 <div class="container">
-  <div class="effective-date" id="effective-date">시행일: 2026년 5월 29일 | 최종 수정: 2026년 5월 30일</div>
+  <div class="effective-date" id="effective-date">시행일: 2026년 5월 29일 | 최종 수정: 2026년 7월 11일</div>
 
   <div class="summary-card">
     <h3 id="summary-title">📋 한눈에 보기</h3>
     <ul id="summary-list">
       <li id="s1">회원가입·로그인 없이 모든 기능을 사용합니다</li>
-      <li id="s2">모든 데이터는 사용자 기기에만 저장됩니다 (완전 오프라인)</li>
+      <li id="s2">모든 데이터는 사용자 기기에만 저장됩니다 (핵심 기능 오프라인)</li>
       <li id="s3">개인정보를 외부 서버로 전송하지 않습니다</li>
+      <li id="s3b">환율 정보는 공개 API에서 조회하며, 이때 개인정보는 전송하지 않습니다</li>
       <li id="s4">Android에서 Google AdMob 광고 ID를 사용합니다</li>
       <li id="s5">iOS에서는 광고를 표시하지 않습니다</li>
       <li id="s6">만 14세 미만 아동의 정보를 수집하지 않습니다</li>
@@ -298,7 +299,7 @@
   <section>
     <h2><span class="num">1</span> <span id="t1">개요</span></h2>
     <p id="p1">
-      여행 플래너(이하 "앱")는 사용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 개인정보 처리방침은 앱이 어떤 정보를 수집하고 어떻게 처리하는지를 안내합니다.
+      여행 노트(이하 "앱")는 사용자의 개인정보를 소중히 여기며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 본 개인정보 처리방침은 앱이 어떤 정보를 수집하고 어떻게 처리하는지를 안내합니다.
     </p>
   </section>
 
@@ -309,7 +310,7 @@
       ✅ 앱은 회원가입 없이 동작하며, 사용자의 개인정보를 직접 수집하지 않습니다.
     </div>
     <p id="p2">
-      앱은 <strong>완전 오프라인</strong>으로 동작합니다. 회원가입·로그인 없이 모든 기능(여행 일정·예산·체크리스트·메모·정산 등)을 사용하며, 입력한 데이터는 사용자의 기기 내에만 저장되고 외부 서버로 전송되지 않습니다.
+      앱의 <strong>핵심 기능은 오프라인</strong>으로 동작합니다. 회원가입·로그인 없이 모든 기능(여행 일정·예산·체크리스트·메모·정산 등)을 사용하며, 입력한 데이터는 사용자의 기기 내에만 저장됩니다. 다만 환율 표시를 위해 공개 환율 API를 호출하며, 이때 개인정보는 전송하지 않습니다.
     </p>
     <p id="p2c" style="margin-top: 12px;">
       다만, 광고 서비스 제공을 위해 <strong>Android에서 Google AdMob을 사용하며 광고 ID</strong>를 활용합니다(아래 광고 섹션 참조). iOS에서는 광고를 표시하지 않습니다.
@@ -342,6 +343,9 @@
     <div class="warning-box" id="w1">
       ⚠️ 앱을 삭제하면 기기에 저장된 모든 데이터가 함께 삭제됩니다. 삭제 전 필요한 데이터는 별도로 백업해 주세요.
     </div>
+    <p id="perm1" style="margin-top: 12px;">
+      카메라·마이크·사진 접근 권한은 미디어 촬영·첨부 목적에만 사용되며, 촬영·선택한 미디어는 기기에만 저장됩니다.
+    </p>
   </section>
 
   <section>
@@ -437,26 +441,27 @@
 </div>
 
 <div class="footer">
-  © 2026 Travel Planner. All rights reserved.
+  © 2026 Trip Notes. All rights reserved.
 </div>
 
 <script>
 const en = {
   "page-title": "Privacy Policy",
-  "page-subtitle": "Travel Planner",
-  "effective-date": "Effective: May 29, 2026 | Last updated: May 30, 2026",
+  "page-subtitle": "Trip Notes",
+  "effective-date": "Effective: May 29, 2026 | Last updated: July 11, 2026",
   "summary-title": "📋 At a Glance",
   "s1": "All features are available without signing up or logging in",
-  "s2": "All data is stored only on your device (fully offline)",
+  "s2": "All data is stored only on your device (core features offline)",
   "s3": "We do not transmit personal information to external servers",
+  "s3b": "Exchange rates are fetched from a public API without transmitting any personal information",
   "s4": "On Android, we use the Google AdMob Advertising ID",
   "s5": "No ads are shown on iOS",
   "s6": "We do not collect information from children under 14",
   "t1": "Introduction",
-  "p1": "Travel Planner (hereinafter \"the App\") values your privacy and complies with applicable privacy laws. This Privacy Policy describes what information the App collects and how it is processed.",
+  "p1": "Trip Notes (hereinafter \"the App\") values your privacy and complies with applicable privacy laws. This Privacy Policy describes what information the App collects and how it is processed.",
   "t2": "Information We Collect",
   "h1": "✅ The App works without an account and does not directly collect personal information.",
-  "p2": "The App works <strong>fully offline</strong>. All features (itineraries, budgets, checklists, memos, split bills, etc.) are available without signing up or logging in, and your data is stored only on your device and never transmitted to external servers.",
+  "p2": "The App's <strong>core features work offline</strong>. All features (itineraries, budgets, checklists, memos, split bills, etc.) are available without signing up or logging in, and your data is stored only on your device. To display exchange rates, the App calls a public exchange-rate API, but no personal information is transmitted.",
   "p2c": "However, to provide advertising, the App uses <strong>Google AdMob and the Advertising ID on Android</strong> (see the Advertising section below). No ads are shown on iOS.",
   "t3": "Data Stored on Your Device",
   "p3": "The App stores the following data locally on your device to provide its features:",
@@ -470,6 +475,7 @@ const en = {
   "d-settle1": "Split Bill", "d-settle2": "Members, shared expenses", "d-settle3": "Device only",
   "d10": "Preferences", "d11": "Currency unit, display settings", "d12": "Device only",
   "w1": "⚠️ Deleting the app will permanently remove all stored data. Please back up any important data before uninstalling.",
+  "perm1": "Camera, microphone, and photo access permissions are used only to capture or attach media, and any captured or selected media is stored only on your device.",
   "t4": "Third-Party Services (Advertising)",
   "p4": "The App displays ads through Google AdMob and <strong>uses Advertising IDs</strong> to provide personalized ads and measure ad performance. Google AdMob may automatically collect the following information for ad delivery:",
   "ul1": "<li>Advertising identifier (IDFA/GAID)</li><li>Device information (model, OS version)</li><li>Approximate location (IP-based)</li><li>App usage data (ad views/clicks)</li>",
